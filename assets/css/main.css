@@ -4695,16 +4695,17 @@ input, select, textarea {
 
 	}
 
-/* ===== Intro Section Fix ===== */
+/* Intro Section */
 #intro {
-    min-height: 100vh;            /* Full viewport height */
-    display: flex;                /* Enable flex layout */
-    flex-direction: column;       /* Stack content vertically */
-    justify-content: center;      /* Center vertically */
-    align-items: center;          /* Center horizontally */
-    text-align: center;           /* Center text */
-    padding: 2rem;                /* Some spacing around */
-    background-color: #f8f8f8;    /* Optional: subtle background */
+    position: relative;
+    min-height: 100vh;           /* full-screen height */
+    background-color: #3b2f2f;   /* dark brown background matching site */
+    color: #ffffff;               /* text color for contrast */
+    display: flex;                /* flex to center content */
+    align-items: center;          /* vertical centering */
+    justify-content: center;      /* horizontal centering */
+    text-align: center;           /* center-align text */
+    padding: 0 2rem;              /* small padding on sides for mobile */
 }
 
 #intro h1 {
@@ -4713,6 +4714,27 @@ input, select, textarea {
 }
 
 #intro p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    max-width: 600px;             /* limit line width */
+    margin: 0 auto 2rem auto;
+    line-height: 1.5;
+}
+
+#intro .actions {
+    margin-top: 2rem;
+}
+
+#intro .button {
+    background-color: #f4a261;    /* highlight button */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#intro .button:hover {
+    background-color: #e76f51;
 }
