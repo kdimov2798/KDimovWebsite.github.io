@@ -4695,33 +4695,16 @@ input, select, textarea {
 
 	}
 
-/* Intro Section Styling */
+/* ===== Intro Section Fix ===== */
 #intro {
-    background-image: url('../images/intro-bg.jpg'); /* Replace with your chosen image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white; /* text color */
-    position: relative;
-}
-
-/* Optional: subtle overlay for better text readability */
-#intro::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.5); /* dark overlay */
-    z-index: 0;
-}
-
-#intro .intro-content {
-    position: relative;
-    z-index: 1;
+    min-height: 100vh;            /* Full viewport height */
+    display: flex;                /* Enable flex layout */
+    flex-direction: column;       /* Stack content vertically */
+    justify-content: center;      /* Center vertically */
+    align-items: center;          /* Center horizontally */
+    text-align: center;           /* Center text */
+    padding: 2rem;                /* Some spacing around */
+    background-color: #f8f8f8;    /* Optional: subtle background */
 }
 
 #intro h1 {
@@ -4732,9 +4715,4 @@ input, select, textarea {
 #intro p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-}
-
-#intro .actions .button {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
 }
