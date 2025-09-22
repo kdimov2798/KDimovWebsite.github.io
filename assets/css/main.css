@@ -4693,7 +4693,9 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-	}/* Intro Section Styling */
+	}
+
+/* Intro Section Styling */
 #intro {
     background-image: url('../images/intro-bg.jpg'); /* Replace with your chosen image */
     background-size: cover;
